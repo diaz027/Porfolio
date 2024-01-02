@@ -37,16 +37,16 @@
   .h3{
     position: relative;
     font-size: 2em;
-    margin-right: 60%;
-    bottom: -70px
+    margin-right: 66%;
+    bottom: -40px
   }
 
   .conteinerT{
-    margin-top: 1.5%;
+    margin-top: -10px;
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* Create 4 equal-width columns */
-    grid-gap: 15px;
-    margin-left: 120px;
+    grid-gap: 30px;
+    margin-left: 150px;
 }
 }
 

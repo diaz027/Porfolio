@@ -1,9 +1,10 @@
-import { Backgraund } from "@/componentes/Backgraund";
+import ParticlesWall from "@/componentes/wallpeaper.jsx/ParticlesWall";
 import "./pages.css";
 
 export default function Home() {
   return (
     <>
+      <ParticlesWall />
       <div className="container">
         <div className="header">
           <div className="h1">
@@ -148,7 +149,7 @@ export default function Home() {
             />{" "}
           </a>{" "}
         </div>
-        <Backgraund />
+
         <p>hdp joni qliadooooooooo</p>
         <p>hdp joni qliadooooooooo</p>
         <p>hdp joni qliadooooooooo</p>
