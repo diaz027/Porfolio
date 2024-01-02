@@ -1,6 +1,6 @@
 /* pages.css */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto:wght@300&display=swap');
 
 /* Estilos para pantallas grandes (mayores a 768px) */
 @media screen and (min-width: 768px) {
@@ -8,7 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Caveat', cursive;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+    background-image: url("https://res.cloudinary.com/divxrmzge/image/upload/v1704054030/2136798_cfqrz3.jpg");
+    background-size: cover;
     font-size: 1.5em;
   }
 
@@ -19,6 +23,7 @@
   }
 
   .profile-image {
+    z-index: 53;
     position: relative;
     width: 250px;
     height: 250px;
@@ -27,14 +32,18 @@
   }
 
   .h1 {
+    z-index: 53;
     font-size: 3em;
-    font-family: 'Dancing Script', cursive;
-  }
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rajdhani', sans-serif;  }
 
   .h2 {
+    z-index: 53;
     margin-top: 5%;
   }
   .h3{
+    z-index: 53;
     position: relative;
     font-size: 2em;
     margin-right: 66%;
@@ -42,6 +51,7 @@
   }
 
   .conteinerT{
+    z-index: 53;
     margin-top: -10px;
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* Create 4 equal-width columns */
@@ -53,17 +63,22 @@
 
 
 .dark-icon {
+  z-index: 53;
     filter: invert(40%) sepia(54%) saturate(44%) hue-rotate(180deg);
   }
 
 /* Estilos para pantallas pequeñas (hasta 767px) */
 @media screen and (max-width: 767px) {
   .container {
-    font-family: 'Caveat', cursive;
+    background-image: url("https://res.cloudinary.com/divxrmzge/image/upload/v1704054030/2136798_cfqrz3.jpg");
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    color: white;
   }
 
   .header {
+    z-index: 53;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +86,7 @@
   }
 
   .profile-image {
+    z-index: 53;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -79,16 +95,20 @@
   }
 
   .h1 {
+    z-index: 53;
     font-size: 2em;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rajdhani', sans-serif; 
   }
 
   .h2 {
+    z-index: 53;
     text-align: center;
     margin-top: 3%;
   }
 
   .conteinerT{
+    z-index: 53;
     display: grid;
   grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
   grid-gap: 15px;
@@ -98,5 +118,6 @@
 
 
 .dark-icon {
+  z-index: 53;
     filter: invert(40%) sepia(54%) saturate(44%) hue-rotate(180deg);
   }
