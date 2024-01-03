@@ -1,5 +1,8 @@
 import ParticlesWall from "@/componentes/wallpeaper.jsx/ParticlesWall";
 import "./pages.css";
+import Proyect from "@/componentes/Rick-and-Morty/pages";
+import Pokemons from "@/componentes/Pokemons/pokemon";
+import Vorttex from "@/componentes/vorttex/vorttex";
 
 export default function Home() {
   return (
@@ -149,12 +152,9 @@ export default function Home() {
             />{" "}
           </a>{" "}
         </div>
-
-        <p>hdp joni qliadooooooooo</p>
-        <p>hdp joni qliadooooooooo</p>
-        <p>hdp joni qliadooooooooo</p>
-        <p>hdp joni qliadooooooooo</p>
-        <p>hdp joni qliadooooooooo</p>
+        <Proyect />
+        <Pokemons />
+        <Vorttex />
       </div>
     </>
   );
