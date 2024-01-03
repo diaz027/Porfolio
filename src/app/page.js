@@ -1,10 +1,44 @@
+"use client";
 import ParticlesWall from "@/componentes/wallpeaper.jsx/ParticlesWall";
 import "./pages.css";
 import Proyect from "@/componentes/Rick-and-Morty/pages";
 import Pokemons from "@/componentes/Pokemons/pokemon";
 import Vorttex from "@/componentes/vorttex/vorttex";
+import React, { useEffect, useState } from "react";
 
-export default function Home() {
+const Home = () => {
+  useEffect(() => {
+    const initializeEmailInfo = () => {
+      const emailIcon = document.getElementById("emailIcon");
+      const emailInfo = document.createElement("div");
+
+      // Agrega la información del correo electrónico
+      emailInfo.innerHTML = "<p>Email: dami27cito@gmail.com</p>";
+      emailInfo.className = "email-info";
+      document.body.appendChild(emailInfo);
+
+      const toggleEmailInfo = () => {
+        emailInfo.style.display =
+          emailInfo.style.display === "block" ? "none" : "block";
+      };
+
+      emailIcon.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleEmailInfo();
+      });
+
+      // Cierra la ventana emergente al hacer clic en cualquier parte fuera de ella
+      window.addEventListener("click", function (event) {
+        if (event.target !== emailInfo && event.target !== emailIcon) {
+          emailInfo.style.display = "none";
+        }
+      });
+    };
+
+    initializeEmailInfo();
+  }, []);
+
   return (
     <>
       <ParticlesWall />
@@ -18,15 +52,55 @@ export default function Home() {
         <div className="h2">
           <h2>Desarrollador Full Stack 💻</h2>
         </div>
+        <div className="simbolos">
+          <a
+            href="https://www.linkedin.com/in/damian-diaz-6a7537258/"
+            target="_blank"
+          >
+            <img
+              align="center"
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+              alt="LinkedIn"
+              height="30"
+              width="40"
+            />
+          </a>
+          <a href="https://github.com/diaz027" target="_blank">
+            <img
+              align="center"
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
+              alt="GitHub"
+              height="30"
+              width="40"
+            />
+          </a>
+          <a
+            href="mailto:dami27cito@gmail.com"
+            target="_blank"
+            className="symbol"
+            id="emailIcon"
+          >
+            <img
+              align="center"
+              src="https://cdn-icons-png.flaticon.com/128/2913/2913990.png"
+              alt="Correo electrónico"
+              height="30"
+              width="40"
+            />
+          </a>
+        </div>
+
         <br />
-        <p>
-          Apasionado desarrollador Full Stack graduado de "Soy Henry", fascinado
-          por la creatividad y la eficiencia en cada proyecto.
-        </p>
-        <p>
-          Mi enfoque va más allá del código, construyo experiencias que inspiran
-          y resuelven problemas de manera efectiva.
-        </p>
+        <div className="descipcions">
+          <p>
+            Apasionado desarrollador Full Stack graduado de "Soy Henry",
+            fascinado por la creatividad y la eficiencia en cada proyecto.
+          </p>
+          <p>
+            Mi enfoque va más allá del código, construyo experiencias que
+            inspiran y resuelven problemas de manera efectiva.
+          </p>
+        </div>
         <br />
         <div className="h3">
           <h2>Tecnologias: </h2>
@@ -158,4 +232,5 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+export default Home;

@@ -5,14 +5,12 @@ import PokemonsCap1 from "./PokemonsCap1.png";
 import PokemonsCap2 from "./PokemonsCap2.png";
 import PokemonsCap3 from "./PokemonsCap3.png";
 import PokemonsCap4 from "./PokemonsCap4.png";
-import youtubeLogo from "./Logotipo-Youtube.png";
 import { useEffect, useState } from "react";
 
 const images = [PokemonsCap1, PokemonsCap2, PokemonsCap3, PokemonsCap4];
 
 const Pokemons = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -129,17 +127,7 @@ const Pokemons = () => {
           </a>{" "}
         </div>
       </div>
-      <Image
-        src={images[currentImageIndex]}
-        className="img2"
-        onMouseEnter={() => setShowLogo(true)}
-        onMouseLeave={() => setShowLogo(false)}
-      />
-      {showLogo && (
-        <a href="https://youtu.be/n9aIsmP7OJE" target="_blank" rel="noreferrer">
-          <img src={youtubeLogo} alt="YouTube Logo" />
-        </a>
-      )}
+      <Image src={images[currentImageIndex]} className="img2" />
     </>
   );
 };

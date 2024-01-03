@@ -40,7 +40,9 @@ font-family: 'Roboto', sans-serif;
 
   .h2 {
     z-index: 53;
-    margin-top: 5%;
+    font-size: 1.5em;
+    margin-top: -50px;
+    margin-left: -700px;
   }
   .h3{
     z-index: 53;
@@ -48,6 +50,10 @@ font-family: 'Roboto', sans-serif;
     font-size: 2em;
     margin-right: 66%;
     bottom: -40px
+  }
+  
+  .descipcions{
+    margin-top: 40px;
   }
 
   .conteinerT{
@@ -57,6 +63,26 @@ font-family: 'Roboto', sans-serif;
     grid-template-columns: repeat(12, 1fr); /* Create 4 equal-width columns */
     grid-gap: 30px;
     margin-left: 200px;
+}
+
+.simbolos{
+  z-index: 53;
+  margin-top: -50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 4 equal-width columns */
+  grid-gap: 30px;
+}
+.email-info {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(82, 81, 81, 0.911);
+  color: #fff;
+  border-radius: 15px;
+  z-index: 9999;
 }
 }
 
@@ -82,7 +108,6 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
   }
 
   .profile-image {
@@ -113,6 +138,32 @@ font-family: 'Roboto', sans-serif;
   grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
   grid-gap: 15px;
 }
+.simbolos {
+  z-index: 53;
+  margin-top: 5px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simbolos a {
+  margin-right: 10px; /* Ajusta el margen derecho entre los íconos */
+}
+
+.email-info {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(82, 81, 81, 0.911);
+  color: #fff;
+  border-radius: 15px;
+  z-index: 9999;
+}
+
 }
 
 

@@ -45,4 +45,35 @@
           position: relative;
           margin-top: 30px; /* Ajusta el margen según sea necesario */
         }
+
+        .title2{
+          z-index: 53;
+          position: relative;
+          font-size: 2em;
+          margin-top: 120px;
+        }
+
+        .text2{
+          margin-top: 20px;
+          overflow-wrap: break-word; /* Permite que las palabras se rompan para ajustarse al ancho del contenedor */
+        word-wrap: break-word; /* Otra propiedad para compatibilidad con navegadores más antiguos */
+        max-width: 300px;
+        margin-right: -650px;
+        }
+
+        .conteinerT2{
+          z-index: 53;
+          margin-top: 15px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+          grid-gap: 30px;
+          margin-left: -5px;
+      }
+
+      .img2 {
+        z-index: 53;
+        width: 450px;
+        height: 300px;
+        margin-top: 40px
+      }
   }
