@@ -4,41 +4,8 @@ import "./pages.css";
 import Proyect from "@/componentes/Rick-and-Morty/pages";
 import Pokemons from "@/componentes/Pokemons/pokemon";
 import Vorttex from "@/componentes/vorttex/vorttex";
-import React, { useEffect, useState } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    const initializeEmailInfo = () => {
-      const emailIcon = document.getElementById("emailIcon");
-      const emailInfo = document.createElement("div");
-
-      // Agrega la información del correo electrónico
-      emailInfo.innerHTML = "<p>Email: dami27cito@gmail.com</p>";
-      emailInfo.className = "email-info";
-      document.body.appendChild(emailInfo);
-
-      const toggleEmailInfo = () => {
-        emailInfo.style.display =
-          emailInfo.style.display === "block" ? "none" : "block";
-      };
-
-      emailIcon.addEventListener("click", function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        toggleEmailInfo();
-      });
-
-      // Cierra la ventana emergente al hacer clic en cualquier parte fuera de ella
-      window.addEventListener("click", function (event) {
-        if (event.target !== emailInfo && event.target !== emailIcon) {
-          emailInfo.style.display = "none";
-        }
-      });
-    };
-
-    initializeEmailInfo();
-  }, []);
-
   return (
     <>
       <ParticlesWall />
@@ -93,8 +60,8 @@ const Home = () => {
         <br />
         <div className="descipcions">
           <p>
-            Apasionado desarrollador Full Stack graduado de "Soy Henry",
-            fascinado por la creatividad y la eficiencia en cada proyecto.
+            Apasionado desarrollador Full Stack graduado de Soy Henry, fascinado
+            por la creatividad y la eficiencia en cada proyecto.
           </p>
           <p>
             Mi enfoque va más allá del código, construyo experiencias que

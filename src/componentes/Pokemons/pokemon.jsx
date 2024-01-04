@@ -1,10 +1,10 @@
 "use client";
 import "./pokemon.css";
 import Image from "next/image";
-import PokemonsCap1 from "./PokemonsCap1.png";
-import PokemonsCap2 from "./PokemonsCap2.png";
-import PokemonsCap3 from "./PokemonsCap3.png";
-import PokemonsCap4 from "./PokemonsCap4.png";
+import PokemonsCap1 from "./pokemonsCap1.png";
+import PokemonsCap2 from "./pokemonsCap2.png";
+import PokemonsCap3 from "./pokemonsCap3.png";
+import PokemonsCap4 from "./pokemonsCap4.png";
 import { useEffect, useState } from "react";
 
 const images = [PokemonsCap1, PokemonsCap2, PokemonsCap3, PokemonsCap4];

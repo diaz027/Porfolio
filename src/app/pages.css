@@ -74,8 +74,8 @@ font-family: 'Roboto', sans-serif;
 }
 .email-info {
   display: none;
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 320px;
   left: 68%;
   transform: translate(-50%, -50%);
   padding: 10px;
@@ -139,6 +139,7 @@ font-family: 'Roboto', sans-serif;
   grid-gap: 15px;
 }
 .simbolos {
+  position: relative;
   z-index: 53;
   margin-top: 5px;
   margin-left: 20px;
@@ -152,10 +153,11 @@ font-family: 'Roboto', sans-serif;
 }
 
 .email-info {
+  position: relative;
+  z-index: 53;
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 68%;
+  position: absolute;
+  
   transform: translate(-50%, -50%);
   padding: 10px;
   background-color: rgba(82, 81, 81, 0.911);

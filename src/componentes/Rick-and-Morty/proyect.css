@@ -29,6 +29,8 @@
   }
 
   .img1 {
+    position: relative;
+    z-index: 1;
     z-index: 53;
     width: 450px;
     height: 300px;
@@ -37,7 +39,8 @@
   }
 
   .conteinerT1{
-    z-index: 53;
+    position: relative;
+    z-index: 53; 
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
@@ -78,7 +81,8 @@
     }
 
     .img1 {
-      z-index: 53;
+      position: relative;
+    z-index: 53;
       width: 450px;
       height: 300px;
       margin-top: 40px;

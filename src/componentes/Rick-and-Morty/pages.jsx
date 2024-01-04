@@ -1,42 +1,5 @@
 "use client";
 import "./proyect.css";
-// import Image from "next/image";
-// import rick1 from "./rick1.png";
-// import rick2 from "./rick2.png";
-// import rick3 from "./rick3.png";
-// import rick4 from "./rick3.png";
-// import rick5 from "./rick5.png";
-
-// const Proyect = () => {
-//   return (
-//     <>
-//       <div className="container2">
-//         <div className="susTitle">
-//           <h2>estos son mis proyecto recientes</h2>
-//         </div>
-
-//         <div className="title">
-//           <h2> Rick and morty</h2>
-//         </div>
-
-//         <div className="espace">
-//           <p>
-//             Esta app marcó mi inicio en programación, brindándome práctica
-//             inicial en codificación. Con una API pública, rendericé 800+
-//             personajes de Rick & Morty, exploré, filtré y fortalecí habilidades
-//             con Redux al enfrentar desafíos en servidor y cliente. Fundamental
-//             para entender programación y desarrollo de apps interactivas.
-//           </p>
-//         </div>
-//         <Image src={rick1} className="img1" />
-//         <Image src={rick2} className="img1" />
-//         <Image src={rick3} className="img1" />
-//         <Image src={rick4} className="img1" />
-//         <Image src={rick5} className="img1" />
-//       </div>
-//     </>
-//   );
-// };
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import rick1 from "./rick1.png";
